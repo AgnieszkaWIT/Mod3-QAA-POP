@@ -6,7 +6,7 @@ describe("QAA Page object pattern", () => {
   const loginPage = new Login();
   const homePage = new HomePage();
 
-  it("login page test", () => {
+  it("Login page test", () => {
   
     loginPage.navigate(); 
     loginPage.validateLoginTitle();
@@ -17,7 +17,7 @@ describe("QAA Page object pattern", () => {
     homePage.logOut();
   });
 
-  it("home page test", () => {
+  it("Home page test", () => {
     loginPage.navigate();
     loginPage.login("testowyqa@qa.team", "QA!automation-1")
     homePage.validateTitle();
